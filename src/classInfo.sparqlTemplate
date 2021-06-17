@@ -1,0 +1,64 @@
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dataid: <http://dataid.dbpedia.org/ns/core#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT ?result {
+ 
+{ SELECT (SUM(?triples) as ?t2016) WHERE {
+		SERVICE <http://databus.dbpedia.org/repo/sparql> {
+                ?dataid dct:hasVersion "2016.10.01"^^xsd:string .
+                ?dataid dcat:distribution/dataid:file ?file .
+    			FILTER regex(str(?file),'^https://databus.dbpedia.org/dbpedia/.*lang=en.*')
+        }
+  	?activity a <https://mods.tools.dbpedia.org/ns/rdf#VoidMod> .
+    ?activity prov:used ?file .
+    ?activity prov:generated [
+    <http://rdfs.org/ns/void#classPartition> [
+       void:class <http://dbpedia.org/ontology/###CLASS###> ;
+       void:triples ?triples
+    ]
+  ]
+} }
+{ SELECT (SUM(?triples) as ?tPrev) WHERE {
+		SERVICE <http://databus.dbpedia.org/repo/sparql> {
+                ?dataid dct:hasVersion "2021.03.01"^^xsd:string .
+                ?dataid dcat:distribution/dataid:file ?file .
+    			FILTER regex(str(?file),'^https://databus.dbpedia.org/dbpedia/.*lang=en.*')
+        }
+  	?activity a <https://mods.tools.dbpedia.org/ns/rdf#VoidMod> .
+    ?activity prov:used ?file .
+    ?activity prov:generated [
+    <http://rdfs.org/ns/void#classPartition> [
+       void:class <http://dbpedia.org/ontology/###CLASS###> ;
+       void:triples ?triples
+    ]
+  ]
+}}
+{ SELECT (SUM(?triples) as ?tCurrent) WHERE {
+		SERVICE <http://databus.dbpedia.org/repo/sparql> {
+                ?dataid dct:hasVersion "2021.05.01"^^xsd:string .
+                ?dataid dcat:distribution/dataid:file ?file .
+    			FILTER regex(str(?file),'^https://databus.dbpedia.org/dbpedia/.*lang=en.*')
+        }
+    ?activity a <https://mods.tools.dbpedia.org/ns/rdf#VoidMod> .
+    ?activity prov:used ?file .
+    ?activity prov:generated [
+    <http://rdfs.org/ns/void#classPartition> [
+       void:class <http://dbpedia.org/ontology/###CLASS###> ;
+       void:triples ?triples
+    ]
+  ]
+}}
+  
+  BIND( SUBSTR( str((100*xsd:double(?tCurrent)/xsd:double(?tPrev))-100), 0, 4) as ?compPrev )
+  BIND( SUBSTR( str((100*xsd:double(?tCurrent)/xsd:double(?t2016))-100), 0, 4) as ?comp2016 )
+  BIND( CONCAT( ?tCurrent, " (", ?compPrev, "%, ", ?comp2016, "%)") as ?result )
+}
+    
+    
+    
+    
+    
