@@ -10,6 +10,8 @@ then
 	soffice --headless --convert-to html $ODT
 fi
 
+#export preamble="$(sed -n '/BEGIN/,/END/p' release.html)"
+#perl -pe 's/ENV{preamble}//ge' -i $HTML
 
 # class stats
 for class in $(grep -Po '###CLASS_\w+###' release.html)
@@ -18,6 +20,12 @@ do
 	export result=$(src/classInfo.sh $className)
 	perl -pe 's/'"$class"'/$ENV{result}/ge' -i $HTML
 done
+
+# dbo prop counts
+export result=$(src/countProp)
+perl -pe 's/###PROP_COUNT###/$ENV{result}/ge' -i $HTML
+
+
 
 # Archivo
 QUERY=$(curl -H "Accept:text/sparql" https://databus.dbpedia.org/denis/collections/latest_ontologies_as_nt)

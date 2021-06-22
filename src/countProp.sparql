@@ -1,0 +1,34 @@
+PREFIX void: <http://rdfs.org/ns/void#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX dataid: <http://dataid.dbpedia.org/ns/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT  (COUNT(DISTINCT ?property) as ?count) WHERE {
+	SERVICE <http://databus.dbpedia.org/repo/sparql> {
+		VALUES ?group {
+			<https://databus.dbpedia.org/dbpedia/generic> 
+			<https://databus.dbpedia.org/dbpedia/mappings> 
+#			<https://databus.dbpedia.org/dbpedia/wikidata> 
+		} 
+		?dataid dataid:account <https://databus.dbpedia.org/dbpedia> .
+		?dataid dataid:group ?group .
+		?dataid dct:hasVersion "2021.05.01"^^xsd:string .
+		?dataid dcat:distribution/dataid:file ?file .
+    FILTER regex(str(?file),".*lang=en.*")
+	}
+    ?activity a <https://mods.tools.dbpedia.org/ns/rdf#VoidMod> .
+    ?activity prov:generated ?g .
+    ?activity prov:used ?file .
+    ?g void:propertyPartition [
+      void:property ?property 
+   ]
+  
+   FILTER regex(str(?property),"^http://dbpedia.org/ontology/.*")
+}
+    
+    
+    
+    

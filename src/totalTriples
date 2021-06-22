@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd $(dirname $0)
+
+QUERY="$(cat totalTriples.sparql)"
+
+curl -s "https://mods.tools.dbpedia.org/sparql?format=text/csv" \
+	--data-urlencode "query=$QUERY" \
+	| sed 's|"||g' \
+	| tail -1
