@@ -23,8 +23,16 @@ done
 
 # dbo prop counts
 export result=$(src/countProp)
-perl -pe 's/###PROP_COUNT###/$ENV{result}/ge' -i $HTML
+perl -pe 's/###DBO_PROP_COUNT###/$ENV{result}/ge' -i $HTML
 
+# class links
+for classLink in $(grep -Po '###CLASSLINK_\w+###' release.html)
+do
+	echo $classLink
+	className=$(echo $classLink | grep -Po '_\K\w+')
+	export result=$(src/classLink.sh $className)
+	perl -pe 's/'"$classLink"'/$ENV{result}/ge' -i $HTML
+done
 
 
 # Archivo

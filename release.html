@@ -7,7 +7,7 @@
 	<meta name="created" content="00:00:00"/>
 	<meta name="changed" content="00:00:00"/>
 	<style type="text/css">
-		@page { size: 8.27in 11.69in; margin: 1in }
+		@page { size: 8.27in 11.69in; margin-left: 1in; margin-right: 1in; margin-top: 1in; margin-bottom: 0.5in }
 		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
 		h1 { margin-top: 0.28in; margin-bottom: 0.08in; direction: ltr; font-size: 20pt; line-height: 100%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2; background: transparent; page-break-after: avoid }
 		h2 { margin-top: 0.25in; margin-bottom: 0.08in; direction: ltr; line-height: 100%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2; background: transparent; page-break-after: avoid }
@@ -22,164 +22,456 @@
 	</style>
 </head>
 <body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="margin-bottom: 0in">
-<font size="4" style="font-size: 15pt"><b>###BEGIN_PREAMBLE<br/>
-</b></font><a href="https://github.com/Vehnem/dbpedia-release-notes"><font color="#1155cc"><u>https://github.com/Vehnem/dbpedia-release-notes</u></font></a>
+<br/>
+
 </p>
 <p style="margin-bottom: 0in"><br/>
 
 </p>
-<p style="margin-bottom: 0in">Release date (15 July)</p>
-<h3 class="western"><a name="_oy0wedj36evm"></a>Channels:</h3>
-<p style="margin-bottom: 0in">Release notes in collection??</p>
-<p style="margin-bottom: 0in">Spread HTML via:</p>
-<ul>
-	<li><p style="margin-bottom: 0in">List of mailing lists</p>
-	<li><p style="margin-bottom: 0in">Newsletter</p>
-	<li><p style="margin-bottom: 0in">Website</p>
-</ul>
-<p style="margin-bottom: 0in">Teaser:</p>
-<ul>
-	<li><p style="margin-bottom: 0in">Twitter</p>
-	<li><p style="margin-bottom: 0in">Forum</p>
-	<li><p style="margin-bottom: 0in">Blog</p>
-	<li><p style="margin-bottom: 0in">LinkedIn</p>
-</ul>
+<div id="Table of Contents1" dir="ltr"><p style="margin-top: 0.06in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><b><a href="#_3p84mxkbz0eu">DBpedia
+	Snapshot 2021-06 Release</a>	1</b></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_1lzcdhathabq">What
+	is the “DBpedia Snapshot” Release?</a>	1</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_yc46jfk7ylpk">Timeline</a>	1</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_gqxcpola3v0c">Recency
+	of Data</a>	2</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_64e32qmf4lnk">Data
+	Quality &amp; Richness</a>	2</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_knovwib8ztzt">Data
+	Access &amp; Interaction Options</a>	3</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.5in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_9dv86iuj896a">Linked
+	Data</a>	3</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.5in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_ms95iiysdq4a">SPARQL
+	Endpoint</a>	3</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.5in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_qfypcwuxwe57">DBpedia
+	Ontology</a>	3</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_l7hnbgv1y72k">DBpedia
+	Snapshot Statistics</a>	3</span></span></font></font></span></font></span></p>
+	<p style="margin-left: 0.25in; margin-top: 0.04in; margin-bottom: 0.06in; line-height: 100%">
+	<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Arial, serif"><font size="2" style="font-size: 11pt"><span style="font-style: normal"><span style="font-weight: normal"><a href="#_7rjufjv5zri3">DBpedia
+	Extraction Dumps on the Databus</a>	5</span></span></font></font></span></font></span></p>
+</div>
 <p style="margin-bottom: 0in"><br/>
 
 </p>
-<p style="margin-bottom: 0in">Producing:</p>
-<ul>
-	<li><p style="margin-bottom: 0in">Create.sh
-	<a href="https://github.com/Vehnem/dbpedia-release-notes"><font color="#1155cc"><u>https://github.com/Vehnem/dbpedia-release-notes</u></font></a>
-		</p>
-	<li><p style="margin-bottom: 0in">See release.html</p>
-	<li><p style="margin-bottom: 0in">Export to odt, then export to html
-	(to get clean HTML)</p>
-	<li><p style="margin-bottom: 0in">Insert layout, images and dynamic
-	part programmatically</p>
-</ul>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<p style="margin-bottom: 0in"><font size="4" style="font-size: 14pt"><b>###END_PREABMLE</b></font></p>
-<h1><a name="_mw789nkbwna4"></a>DBpedia Community Edition Stable
-Release 2021-06</h1>
-<p style="margin-bottom: 0in">-&gt; more <b>stable </b>than monthly,
-more <b>consistent</b></p>
-<p style="margin-bottom: 0in">Uses Wikipedia dumps from June 1st per
-default, 4 weeks of automated quality-control, if big errors are
-found, parts of the previous dump are used. DBpedia Basic produces a
-total 20 Billion triples, 5000 files, 140 languages of Wikipedia and
-Wikidata. 
-</p>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<h2 class="western"><a name="_l7hnbgv1y72k"></a>Overview EN DBpedia
-(call sign: Tiny Diamond TD)</h2>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
+<h1><font size="6" style="font-size: 24pt"><b>DBpedia Snapshot
+2021-06 Release</b></font><!-- https://drive.google.com/drive/folders/1uOJyEqXlA_GhlShCqdZQrQnhKRJ6iA4H --></h1>
+<h2 class="western"><a name="_1lzcdhathabq"></a><font size="5" style="font-size: 18pt">What
+is the “DBpedia Snapshot” Release?</font></h2>
 <p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
-<font color="#333333"><font face="Roboto, serif"><font size="3" style="font-size: 12pt">The
-DBpedia Tiny Diamond had many names before: DBpedia Core, EN DBpedia
-or some called it just DBpedia. In fact, it is a small, but very
-useful subset of the whole DBpedia extraction (EN generic/mappings +
-abstracts from other languages + community contributed links and
-ontologies). Tiny diamond is the refurbished equivalent of the &quot;core&quot;
-folder used for previous releases before 2020 (e.g.
-</font></font></font><a href="http://downloads.dbpedia.org/2016-10/core/"><font color="#1155cc"><font face="Roboto, serif"><font size="3" style="font-size: 12pt"><u>http://downloads.dbpedia.org/2016-10/core/</u></font></font></font></a><font color="#333333"><font face="Roboto, serif"><font size="3" style="font-size: 12pt">).
- This subset is loaded to the DBpedia </font></font></font><a href="https://wiki.dbpedia.org/OnlineAccess"><font color="#2a8a75"><font face="Roboto, serif"><font size="3" style="font-size: 12pt">Main
-SPARQL endpoint</font></font></font></a><font color="#333333"><font face="Roboto, serif"><font size="3" style="font-size: 12pt">.
- We are now providing this dataset as part of the community edition
-under the call sign “Tiny Diamond”, the smallest DBpedia kernel
-to glue Linked Open Data together. </font></font></font>
-</p>
-<p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
-<font color="#333333"><font face="Roboto, serif"><font size="3" style="font-size: 12pt">Download
-(see tabs for bash, databus client, sparql and plain URL list): </font></font></font>
-<a href="https://databus.dbpedia.org/dbpedia/collections/tiny-diamond-2021-06"><font color="#3867d6"><font size="3" style="font-size: 12pt"><span style="background: #fafbfc">https://databus.dbpedia.org/dbpedia/collections/tiny-diamond-2021-06</span></font></font></a></p>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<p style="margin-right: -0.15in; margin-top: 0.14in; margin-bottom: 0.14in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
-<font color="#333333"><font face="Roboto, serif"><font size="3" style="font-size: 12pt"><b>Classes.
-</b></font></font></font><font color="#333333"><font face="Roboto, serif"><font size="3" style="font-size: 12pt">Knowledge
-in Wikipedia is constantly growing at a rapid pace. We measures the
-growth per DBpedia Ontology Class: Total number (this release), %
-growth to previous, % growth to 2016-10. TD 2021-06 consists of
-1682299 (1.69%, 5.84%) persons, 992381 (0.44%, 2413%) places (including
-584938 (-0.0%, 5465%) populated places), 593689 (0.54%, 6017%) works
-(including 153984 (-0.7%, 35.2%) music albums,  (%, %) films
-and TODO video games), 341609 (0.69%, 1070%) organizations
-(including 84464 (0.61%, 116.%) companies and TODO educational
-institutions), 169874 (-5.9%, 2831%) species, 11952 (-15.%, 164.%) plants
-and 8637 (0.16%, 596.%) diseases.</font></font></font></p>
-<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><b><span style="background: #ffffff">Detailed
-Growth: </span></b></font></font><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">below
-an image showing the detailed growth for one class, click on the
-links for other classes: TODO add a link for each class to Yasgui</span></font></font></p>
-<p style="margin-bottom: 0in"><img src="release_html_b88a35dd7d58665.png" name="image1.png" align="bottom" width="602" height="372" border="0"/>
-</p>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">Other
-Stats</span></font></font></p>
-<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">DBpedia
-ontology property count 1372</span></font></font></p>
-<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">###TOTAL_TRIPLES###</span></font></font></p>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">Explain
-Download via Collection</span></font></font></p>
-<h2 class="western"><a name="_7rjufjv5zri3"></a>Whole dataset</h2>
-<p style="margin-bottom: 0in">TODO triples, files, download, etc. 
-</p>
-<p style="margin-bottom: 0in"><br/>
-
-</p>
-<h1><a name="_4h8eqw1ozbbe"></a>DBpedia Global - Data Beyond
-Wikipedia 
-</h1>
-<h2 class="western"><a name="_wb9mueid6625"></a>Archivo - a Unified
-Space to Access All Ontologies 
-</h2>
-<p align="justify" style="margin-top: 0.21in; margin-bottom: 0.21in; line-height: 100%; background: #ffffff">
-<font color="#104057"><font face="Roboto, serif">DBpedia Archivo
-(</font></font><a href="https://archivo.dbpedia.org/list"><font color="#1155cc"><font face="Roboto, serif"><u>archivo.dbpedia.org</u></font></font></a><font color="#104057"><font face="Roboto, serif">)
-is an online ontology interface and augmented archive. We are already
-providing a persistent backup for over </font></font><font color="#104057"><font face="Roboto, serif"><b>1354
-ontologies (incl. versions) </b></font></font><font color="#104057"><font face="Roboto, serif">and
-might have become </font></font><font color="#104057"><font face="Roboto, serif"><b>the
-most exhaustive unified space</b></font></font><font color="#104057"><font face="Roboto, serif">
-to discover and reach ontologies in the Semantic Web</font></font><font color="#104057"><font face="Roboto, serif"><b>.
-</b></font></font><font color="#104057"><font face="Roboto, serif">What
-you can do to help: (1) add not-yet-discovered ontology, (2) check
-your own ontology and their rating and improve them to get ★★★★,
-(3) expert ontology users wanted to form a think tank on how to
-holistically evolve and validate the web of ontologies. </font></font><font color="#104057"><font face="Roboto, serif"><b>Read
-more details and download the paper </b></font></font><a href="https://link.springer.com/chapter/10.1007/978-3-030-59833-4_2"><font color="#1155cc"><font face="Roboto, serif"><u><b>here</b></u></font></font></a><font color="#104057"><font face="Roboto, serif"><b>.</b></font></font></p>
-<p style="margin-bottom: 0in">TODO: some ideas:</p>
+<font color="#333333"><font face="Roboto, serif">This release has
+been associated with many names in the past: &quot;DBpedia Core&quot;,
+&quot;EN&nbsp;DBpedia&quot;, and — most confusingly — just
+&quot;DBpedia&quot;. In fact, it is a combination of —</font></font></p>
 <ul>
-	<li><p style="margin-bottom: 0in">Add image?</p>
-	<li><p style="margin-bottom: 0in">Add a summary for last three
-	months?</p>
-	<li><p style="margin-bottom: 0in">Add total size of ontologies?
-	Axioms? 
+	<li><p style="margin-top: 0.14in; margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Roboto, serif"><b>EN Wikipedia
+	data</b></font></font><font color="#333333"><font face="Roboto, serif">
+	— A small, but very useful, subset (~ 1 Billion triples or 14%) of
+	the </font></font><a href="https://link.springer.com/chapter/10.1007/978-3-030-59833-4_1"><font color="#1155cc"><font face="Roboto, serif"><u>whole
+	DBpedia extraction</u></font></font></a><font color="#333333"><font face="Roboto, serif">
+	using the </font></font><a href="https://github.com/dbpedia/extraction-framework"><font color="#1155cc"><font face="Roboto, serif"><u>DBpedia
+	Information Extraction Framework</u></font></font></a><font color="#333333"><font face="Roboto, serif">
+	(DIEF), comprising structured information extracted from the English
+	Wikipedia plus some enrichments from other Wikipedia language
+	editions, notably multilingual abstracts in ar, ca, cs, de, el, eo,
+	es, eu, fr, ga, id, it, ja, ko, nl, pl, pt, sv, uk, ru, zh . </font></font>
 	</p>
-	<li><p style="margin-bottom: 0in">Add other news, e.g. fix for `/`
-	ontologies</p>
+	<li><p style="margin-top: 0.14in; margin-bottom: 0in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Roboto, serif"><b>Links</b></font></font><font color="#333333"><font face="Roboto, serif">
+	— Community-contributed cross-references and owl:sameAs links to
+	other linked data sets on the Linked Open Data (LOD) Cloud that
+	allow to effectively find and retrieve further information from the
+	largest,  decentral, change-sensitive knowledge graph on earth that
+	has formed around DBpedia since 2007. </font></font>
+	</p>
+	<li><p style="margin-top: 0.14in; margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+	<font color="#333333"><font face="Roboto, serif"><b>Community
+	extensions</b></font></font><font color="#333333"><font face="Roboto, serif">
+	— Community-contributed extensions such as additional ontologies
+	and taxonomies. </font></font>
+	</p>
+</ul>
+<h2 class="western" style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff"><a name="_yc46jfk7ylpk"></a>
+<font size="5" style="font-size: 18pt">Timeline</font></h2>
+<p style="margin-bottom: 0in">DBpedia Snapshot releases are scheduled
+for the 15th of February, May, July, and October (with +/- 5 days
+tolerance), and are named using the same date convention as the
+Wikipedia Dumps that served as the basis for the release. An example
+of the release timeline is shown below: 
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<table width="601" cellpadding="7" cellspacing="0">
+	<col width="189"/>
+
+	<col width="105"/>
+
+	<col width="129"/>
+
+	<col width="120"/>
+
+	<tr valign="top">
+		<td width="189" style="border: 1.00pt solid #000000; padding: 0.07in"><p style="orphans: 0; widows: 0">
+			<i><b>June 6–8 </b></i>
+			</p>
+		</td>
+		<td width="105" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<i><b>June 8–20</b></i></p>
+		</td>
+		<td width="129" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<i><b>June 20–July 10</b></i></p>
+		</td>
+		<td width="120" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<i><b>July 10–20</b></i></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="189" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			Wikipedia dumps for June 1 become available on
+			https://dumps.wikimedia.org/</p>
+		</td>
+		<td width="105" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			Download and extraction with DIEF</p>
+		</td>
+		<td width="129" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			Post-processing and quality-control period</p>
+		</td>
+		<td width="120" style="border: 1.00pt solid #000000; padding: 0.07in"><p align="left" style="border: none; padding: 0in; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			Deployment as Linked Data and SPARQL endpoint</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 class="western"><font size="5" style="font-size: 18pt">Recency of
+Data</font></h2>
+<p style="margin-bottom: 0in">Given the timeline above, the <i>EN
+Wikipedia</i> data of DBpedia Snapshot has a lag of 1-4 months. We
+recommend the following strategies to mitigate this:</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<ol>
+	<li><p style="margin-bottom: 0in"><b>DBpedia Snapshot as a kernel
+	for Linked Data</b>: Following the Linked Data paradigm, we
+	recommend using the Linked Data links to other knowledge graphs to
+	retrieve high-quality and recent information. DBpedia’s network
+	consists of the best knowledge engineers in the world, working
+	together, using linked data principles to build a high-quality,
+	open, decentralized knowledge graph network around DBpedia. Recency
+	and change-sensitivity are two of the greatest challenges of our
+	time, and can only be overcome by linking data across databases.
+	Copying data into a central database eventually and inevitably faces
+	serious issues of co-evolution and scalability. 
+	</p>
+	<li><p style="margin-bottom: 0in"><b>DBpedia Live</b>: Wikipedia is
+	unmistakingly the richest, most recent body of human knowledge and
+	source of news in the world. DBpedia Live is <b>just minutes behind</b>
+	edits on Wikipedia,  which means that as soon as any of the 120k
+	Wikipedia editors presses the “save” button, DBpedia Live will
+	extract fresh data and update. DBpedia Live is currently in tech
+	preview status and we are working towards a high-available and
+	reliable business API with support. DBpedia Live consists of the
+	DBpedia Live Sync API<!-- link --> (for syncing into any kind of
+	on-site databases), Linked Data and SPARQL endpoint. 
+	</p>
+	<li><p style="margin-bottom: 0in"><a href="https://databus.dbpedia.org/dbpedia/collections/latest-core"><font color="#1155cc"><u>Latest-Core</u></font></a>
+	is a dynamically updating Databus Collection. Our automated
+	extraction robot “<a href="https://link.springer.com/chapter/10.1007/978-3-030-59833-4_1"><font color="#1155cc"><u>MARVIN</u></font></a>”
+	publishes monthly dev versions of the full extraction, which are
+	then refined and enriched to become Snapshot.     
+	</p>
+</ol>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 class="western">Data Quality &amp; Richness</h2>
+<p style="margin-bottom: 0in">We would like to acknowledge the
+excellent work of Wikipedia editors (~46k active editors for EN
+Wikipedia), who are ultimately responsible for collecting information
+in Wikipedia’s infoboxes, which are refined by DBpedia’s
+extraction into our knowledge graphs. Wikipedia’s infoboxes are
+steadily growing each month and <a href="http://ceur-ws.org/Vol-2836/qurator2021_paper_18.pdf"><font color="#1155cc"><u>according
+to our measurements</u></font></a> grow by 150% every three years. EN
+Wikipedia’s inboxes even doubled in this timeframe. This richness
+of knowledge drives the DBpedia Snapshot knowledge graph and is
+further potentiated by synergies with linked data cross-references.
+Statistics are given below. 
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 class="western"><font size="5" style="font-size: 18pt">Data
+Access &amp; Interaction Options</font></h2>
+<h3 class="western">Linked Data</h3>
+<p style="margin-bottom: 0in"><a href="http://dbpedia.org/resource/Linked_data"><font color="#1155cc"><u>Linked
+Data</u></font></a> is a principled approach to publishing RDF data
+on the Web that enables interlinking data between different data
+sources, courtesy of the built-in power of Hyperlinks as unique
+Entity Identifiers.</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in">HTML pages comprising Hyperlinks that
+confirm to Linked Data Principles is one of the methods of
+interacting with data provided by the DBpedia Snapshot, be it
+manually via the web browser or programmatically using REST
+interaction patterns via <a href="https://dbpedia.org/resource/$title"><font color="#1155cc"><u>https://dbpedia.org/resource/</u></font></a>{entity-label}
+pattern. Naturally, we encourage Linked Data interactions, while also
+expecting user-agents to honor the cache-control HTTP response header
+for massive crawl operations. <a href="https://www.dbpedia.org/resources/linked-data/"><font color="#1155cc"><u>Instructions
+for accessing Linked Data</u></font></a>, available in 10 formats. 
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h3 class="western" style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+SPARQL Endpoint</h3>
+<p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+This service enables some astonishing queries against Knowledge
+Graphs derived from Wikipedia content. The Query Services Endpoint
+that makes this possible is identified by <a href="http://dbpedia.org/sparql"><font color="#1155cc"><u>http://dbpedia.org/sparql</u></font></a>,
+and it currently<font color="#333333"> </font><a href="https://www.dbpedia.org/blog/dbpedia-usage-report/"><font color="#1155cc"><u>handles
+7.2 million queries daily on average</u></font></a><font color="#333333">.
+ </font><a href="https://www.dbpedia.org/resources/sparql/"><font color="#1155cc"><u>See
+powerful queries and instructions</u></font></a><font color="#333333">
+</font>(incl. rates and limitations).</p>
+<p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+An <i>effective Usage Pattern</i> is to filter a relevant subset of
+entity descriptions for your use case via SPARQL and then combine
+with the power of Linked Data by looking up (or de-referencing) data
+via owl:sameAs property links en route to retrieving specific and
+recent data from across other Knowledge Graphs across the massive
+Linked Open Data Cloud.</p>
+<p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+Additionally, DBpedia Snapshot dumps and additional data from the
+complete collection of datasets derived form Wikipedia are provided
+by the DBpedia Databus for use in your own SPARQL-accessible
+Knowledge Graphs.</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h3 class="western">DBpedia Ontology</h3>
+<p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+This Snapshot Release was built with DBpedia Ontology (DBO) version:
+<a href="https://databus.dbpedia.org/ontologies/dbpedia.org/ontology--DEV/2021.07.09-070001"><font color="#1155cc"><u>https://databus.dbpedia.org/ontologies/dbpedia.org/ontology--DEV/2021.07.09-070001</u></font></a><font color="#333333">
+</font>We thank all DBpedians for the contribution to the ontology
+and the mappings. See <a href="https://www.dbpedia.org/resources/ontology/"><font color="#1155cc"><u>documentation
+and visualisations</u></font></a><font color="#333333"> </font>,<font color="#333333">
+</font><a href="http://dief.tools.dbpedia.org/server/ontology/classes/"><font color="#1155cc"><u>class
+tree and properties</u></font></a><font color="#333333">, </font><a href="http://mappings.dbpedia.org/index.php/How_to_edit_the_DBpedia_Ontology"><font color="#1155cc"><u>wiki</u></font></a>.
+</p>
+<p style="margin-bottom: 0.11in; border: none; padding: 0in; line-height: 100%; background: #ffffff">
+<br/>
+<br/>
+
+</p>
+<h2 class="western">DBpedia Snapshot Statistics</h2>
+<p style="margin-bottom: 0in"><b>Overview.</b> 
+</p>
+<p style="margin-bottom: 0in">Overall the current Snapshot Release
+contains <!-- @hopfer122@googlemail.com --><!-- add text --><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">more
+than 700M facts (triples).</span></font></font></p>
+<p style="margin-bottom: 0in">The DBpedia ontology is the heart of
+DBpedia. The DBpedia community is continuously contributing to the
+DBpedia ontology schema and the DBpedia infobox-to-ontology mappings
+by actively using the <a href="http://mappings.dbpedia.org/"><font color="#1155cc"><u>DBpedia
+Mappings Wiki</u></font></a>.</p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">The
+current Snapshot Release utilizes a total of 55k properties, whereas
+1372 are defined by the DBpedia ontology.</span></font></font></p>
+<p style="margin-bottom: 0in"><!-- @hopfer122@googlemail.com --><!-- add text --></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-right: -0.15in; margin-top: 0.14in; margin-bottom: 0.14in; border: none; padding: 0in; line-height: 138%; background: #ffffff; page-break-after: avoid">
+<b>Classes. </b>Knowledge in Wikipedia is constantly growing at a
+rapid pace. We use the DBpedia Ontology Classes to measure the
+growth: Total number in this release (in brackets we give: a) growth
+to previous release, which can be negative temporarily and b) growth
+compared to Snapshot 2016-10): 
+</p>
+<ul>
+	<li><p style="margin-right: -0.15in; margin-top: 0.14in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff; page-break-after: avoid">
+	Persons: 1682299 (1.69%, 5.84%)</p>
+	<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff; page-break-after: avoid">
+	Places: 992381 (0.44%, 2413%), including but not limited to
+	584938 (-0.0%, 5465%) populated places</p>
+	<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff; page-break-after: avoid">
+	Works 593689 (0.54%, 6017%), including, but not limited to 
+	</p>
+	<ul>
+		<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+		153984 (-0.7%, 35.2%) music albums</p>
+		<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+		140766 (0.79%, 1453%) films</p>
+		<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+		24198 (1.17%, 1120%)  video games</p>
+	</ul>
+	<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff; page-break-after: avoid">
+	Organizations: 341609 (0.69%, 1070%), including but not limited
+	to</p>
+	<ul>
+		<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+		84464 (0.61%, 116.%) companies</p>
+		<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+		63809 (0.17%, 6380%) educational institutions</p>
+	</ul>
+	<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+	Species: 169874 (-5.9%, 2831%)</p>
+	<li><p style="margin-right: -0.15in; margin-bottom: 0in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+	Plants: 11952 (-15.%, 164.%) 
+	</p>
+	<li><p style="margin-right: -0.15in; margin-bottom: 0.14in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+	Diseases: 8637 (0.16%, 596.%)</p>
+</ul>
+<p style="margin-right: -0.15in; margin-top: 0.14in; margin-bottom: 0.14in; border: none; padding: 0in; line-height: 138%; background: #ffffff">
+<font color="#1d1c1d"><b><span style="background: #ffffff">Detailed
+Growth of Classes:</span></b></font><font color="#1d1c1d"><span style="background: #ffffff">
+The image below shows the detailed growth for one class. Click on the
+links for other classes: <a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPlace%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Place</a>,
+<a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPopulatedPlaces%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">PopulatedPlaces</a>, <a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FWork%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Work</a>,
+<a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FAlbum%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Album</a>, </span></font><a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FFilm%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Film</a>,
+<a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FVideoGame%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">VideoGame</a>, <a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FOrganisation%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Organisation</a>,
+<a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FCompany%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Company</a>, <a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FEducationalInstitution%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">EducationalInstitution</a>,
+<a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FSpecies%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Species</a>, <a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FSpecies%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Species</a>,
+<a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FPlant%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Plant</a>, <a href="https://databus.dbpedia.org/yasgui/#query=PREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0APREFIX+void%3A+%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23%3E%0APREFIX+dcat%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX+dct%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX+dataid%3A+%3Chttp%3A%2F%2Fdataid.dbpedia.org%2Fns%2Fcore%23%3E%0APREFIX+prov%3A+%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fprov%23%3E%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0ASELECT+(SUM(%3Ftriples)+as+%3Fcount)+%3Fversion+WHERE+%7B%0A++++++++SERVICE+%3Chttp%3A%2F%2Fdatabus.dbpedia.org%2Frepo%2Fsparql%3E+%7B%0A++++++++++++++++%3Fdataid+dataid%3Aaccount+%3Chttps%3A%2F%2Fdatabus.dbpedia.org%2Fdbpedia%3E+.%0A++++++++++++++++%3Fdataid+dataid%3Agroup+%3Fgroup+.%0A++++++++++++++++%3Fdataid+dct%3AhasVersion+%3Fversion+.%0A++++++++++++++++%3Fdataid+dcat%3Adistribution%2Fdataid%3Afile+%3Ffile+.%0A++++FILTER+regex(str(%3Ffile)%2C'.*lang%3Den.*')%0A++++++++%7D%0A++%3Factivity+a+%3Chttps%3A%2F%2Fmods.tools.dbpedia.org%2Fns%2Frdf%23VoidMod%3E+.%0A++%3Factivity+prov%3Aused+%3Ffile+.%0A++%3Factivity+prov%3Agenerated+%5B%0A++++%3Chttp%3A%2F%2Frdfs.org%2Fns%2Fvoid%23classPartition%3E+%5B%0A+++++++void%3Aclass+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2FDisease%3E+%3B%0A+++++++void%3Atriples+%3Ftriples%0A++++%5D%0A++%5D%0A%7D+ORDER+BY+DESC(%3Fversion)&contentTypeConstruct=text%2Fturtle&contentTypeSelect=application%2Fsparql-results%2Bjson&endpoint=https%3A%2F%2Fmods.tools.dbpedia.org%2Fsparql&requestMethod=POST&tabTitle=class+evo+template&headers=%7B%7D&outputFormat=pivot&outputSettings=%7B%22pivotTable%22%3A%7B%22cols%22%3A%5B%22version%22%5D%2C%22rows%22%3A%5B%5D%2C%22rendererName%22%3A%22Line+Chart%22%2C%22aggregatorName%22%3A%22Average%22%2C%22vals%22%3A%5B%22count%22%5D%7D%7D" target="_blank">Disease</a><img src="release_html_9bb5dd5859673ee7.png" name="image1.png" align="bottom" width="602" height="372" border="0"/>
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><b><span style="background: #ffffff">Links.
+</span></b></font></font><!-- some stats for linking --><!-- total count, nr of targets, top10 --></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">Cross-Linking
+is an important feature of the Linked Open Data Cloud.</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><b><span style="background: #ffffff">Total
+61,717,519</span></b></font></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><b><span style="background: #ffffff">To
+178 targets</span></b></font></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><b><span style="background: #ffffff">Top
+11</span></b></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">6,672,052
+global.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">5,380,836
+www.wikidata.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">4,308,772
+yago-knowledge.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">2,561,963
+viaf.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,989,632
+fr.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,851,182
+de.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,563,230
+it.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,495,866
+es.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,283,672
+pl.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,274,002
+ru.dbpedia.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,203,247
+d-nb.info</span></font></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><b><span style="background: #ffffff">Top
+10 Without DBpedia namespaces</span></b></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">5,380,836
+www.wikidata.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">4,308,772
+yago-knowledge.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">2,561,963
+viaf.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">1,203,247
+d-nb.info</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">596,134
+umbel.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">559,821
+sws.geonames.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">431,830
+data.bibliotheken.nl</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">430,839
+</span></font></font><a href="http://www.w3.org/"><font color="#1155cc"><font size="3" style="font-size: 11pt"><u><span style="background: #ffffff">www.w3.org</span></u></font></font></a><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">
+(wn20)</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">301,483
+musicbrainz.org</span></font></font></p>
+<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">104,433
+linkedgeodata.org</span></font></font></p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<h2 class="western">DBpedia Extraction Dumps on the Databus</h2>
+<p style="margin-bottom: 0in">All extracted files are reachable via
+the DBpedia account on the Databus. The Databus has two main
+structures:</p>
+<ul>
+	<li><p style="margin-bottom: 0in">In groups, artifacts, version,
+	similar to software in  Maven:<font size="2" style="font-size: 10pt">
+	</font><a href="https://databus.dbpedia.org/$user/$group/$artifact/$version/$filename"><font color="#1155cc"><u>https://databus.dbpedia.org/$user/$group/$artifact/$version/$filename</u></font></a>
+		</p>
+	<li><p style="margin-bottom: 0in">In Databus collections that are
+	SPARQL queries over <a href="https://databus.dbpedia.org/yasui"><font color="#1155cc"><u>https://databus.dbpedia.org/yasui</u></font></a>
+	filtering and selecting files from these artifacts. 
+	</p>
 </ul>
 <p style="margin-bottom: 0in"><br/>
 
 </p>
-<h2 class="western"><a name="_wgk6clcvcwfw"></a>Global.dbpedia.org</h2>
-<p style="margin-bottom: 0in"><font color="#1d1c1d"><font size="3" style="font-size: 11pt"><span style="background: #ffffff">????</span></font></font></p>
+<p style="margin-bottom: 0in"><b>Snapshot Download.</b> For
+downloading DBpedia Snapshot, we prepared this collection, which also
+includes detailed releases notes<!-- @hopfer122@googlemail.com -->: 
+</p>
+<p style="margin-bottom: 0in"><a href="https://databus.dbpedia.org/dbpedia/collections/dbpedia-snapshot-2021-06"><font color="#1155cc"><u>https://databus.dbpedia.org/dbpedia/collections/dbpedia-snapshot-2021-06</u></font></a>
+</p>
+<p style="margin-bottom: 0in">The collection is roughly equivalent to
+<a href="http://downloads.dbpedia.org/2016-10/core/"><font color="#1155cc"><u>http://downloads.dbpedia.org/2016-10/core/</u></font></a></p>
+<p style="margin-bottom: 0in">Collections can be downloaded many
+different ways, some download modalities such as bash script, SPARQL
+and plain URL list are found in the tabs at the collection. Files are
+provided as bzip2 compressed n-triples files. In case you need a
+different format or compression, you can also use the “Download-As”
+function of the Databus Client (GitHub), e.g. <span style="background: #cccccc">-s
+$collection -c gzip</span>  would download the collection and convert
+it to GZIP during download. 
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><b>Replicating DBpedia Snapshot</b> on
+your server can be done via Docker, see
+<a href="https://hub.docker.com/r/dbpedia/virtuoso-sparql-endpoint-quickstart"><font color="#1155cc"><u>https://hub.docker.com/r/dbpedia/virtuoso-sparql-endpoint-quickstart</u></font></a><font color="#333333">
+</font>
+</p>
+<p style="margin-bottom: 0in"><br/>
+
+</p>
+<p style="margin-bottom: 0in"><font face="Consolas, serif"><font size="2" style="font-size: 9pt"><span style="background: #fbfbfc">git
+clone
+https://github.com/dbpedia/virtuoso-sparql-endpoint-quickstart.git</span></font></font></p>
+<p style="margin-bottom: 0in"><font face="Consolas, serif"><font size="2" style="font-size: 9pt"><span style="background: #fbfbfc">cd
+virtuoso-sparql-endpoint-quickstart</span></font></font></p>
+<p style="margin-bottom: 0in; line-height: 145%"><font face="Consolas, serif"><font size="2" style="font-size: 9pt"><span style="background: #fbfbfc">COLLECTION_URI=https://databus.dbpedia.org/dbpedia/collections/dbpedia-snapshot-2021-06
+ VIRTUOSO_ADMIN_PASSWD=password docker-compose up</span></font></font></p>
 <p style="margin-bottom: 0in"><br/>
 
 </p>
@@ -189,8 +481,29 @@ more details and download the paper </b></font></font><a href="https://link.spri
 <p style="margin-bottom: 0in"><br/>
 
 </p>
+<p style="margin-bottom: 0in"><b>Download files from the whole
+DBpedia extraction. </b>The whole extraction consists of approx. 20
+Billion triples and 5000 files created from 140 languages of
+Wikipedia, Commons  and Wikidata. They can be found in
+https://databus.dbpedia.org/dbpedia/(generic|mappings|text|wikidata) 
+</p>
+<p style="margin-bottom: 0in">You can copy-edit a collection and
+create your own customized (e.g.) collections via “Actions&quot; -&gt;
+&quot;Copy Edit&quot; , e.g. you can Copy Edit the snapshot
+collection above, remove some files that you do not need and add
+files from other languages. Please see the Rhizomer use case: <a href="https://forum.dbpedia.org/t/best-way-to-download-specific-parts-of-dbpedia/1268"><font color="#1155cc"><u>Best
+way to download specific parts of DBpedia</u></font></a>. Of course,
+this only refers to the archived dumps on the Databus for users who
+want to bulk download and deploy into their own infrastructure.
+Linked Data and SPARQL allow for filtering the content using a<font color="#333333">
+</font><a href="https://www.google.com/url?q=https://medium.com/virtuoso-blog/what-is-small-data-and-why-is-it-important-fbf5f267884&amp;sa=D&amp;source=editors&amp;ust=1626689778981000&amp;usg=AOvVaw1Q1U0ao8DeiDPYb3-1hw6b"><font color="#1155cc"><u>small
+data pattern</u></font></a>.  
+</p>
 <p style="margin-bottom: 0in"><br/>
 
 </p>
+<div title="footer"><p align="right" style="margin-top: 0.46in; margin-bottom: 0in">
+	<span style="background: #c0c0c0"><sdfield type=PAGE subtype=RANDOM format=PAGE>6</sdfield></span></p>
+</div>
 </body>
 </html>
