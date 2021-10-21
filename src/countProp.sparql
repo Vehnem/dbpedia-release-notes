@@ -15,7 +15,7 @@ SELECT  (COUNT(DISTINCT ?property) as ?count) WHERE {
 		} 
 		?dataid dataid:account <https://databus.dbpedia.org/dbpedia> .
 		?dataid dataid:group ?group .
-		?dataid dct:hasVersion "2021.05.01"^^xsd:string .
+		?dataid dct:hasVersion "###VERSION###"^^xsd:string .
 		?dataid dcat:distribution/dataid:file ?file .
     FILTER regex(str(?file),".*lang=en.*")
 	}
